@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Index</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <script>
+    $(function(){
+      var includes = $('[data-include]');
+      jQuery.each(includes, function(){
+        var file = $(this).data('include') + '.html';
+        $(this).load(file);
+      });
+    });
+  </script>
+</head>
+<body>
+<div class="container-fluid" style="padding-top:10px;padding-bottom:10px">
+    <div data-include="navigation"></div>
+</div>
+<br><br>
+ 
+  <div id="Summary" class="container-fluid bg-primary" style="padding-top:70px;padding-bottom:70px">
+    <h1>Summary</h1>
+    <p>Eleven years of experience in designing, developing and implementation of enterprise applications using Java/J2EE technologies.
+        <li> Strong experience in SPRING Framework, Hibernate and STRUTS.</li>
+        <li>Have used Web-Services extensively across various projects. SOAP and RESTfull.</li>
+            <li> Used release automation tools like Jenkins and LARA.</li>
+        <li>Strong object oriented programming concepts.</li>
+        <li>Sun Certified Java Programmer with strong programming skills and diverse computer science experience.</li>
+        <li>Strong experience in JAVA Concurrency, multithreading and JAVA Memory Management.</li>
+        <li>Expertise in J2EE Design Patterns such as MVC, DAO, Singleton, Factory Patterns Session Façade etc.</li>
+        <li>Experience developing and deploying applications using build tools such as Maven.</li>
+        <li>Have rich experience in Release and Change management with ServiceNow and Code repository management with SVN and GITHUB.</li>
+        <li>Experience in providing logging support using log4j. Hands on experience with Weblogic server 10.3 and 8.1.</li>
+       </p>
+    </div>
+
+</body>  
+
+</html>

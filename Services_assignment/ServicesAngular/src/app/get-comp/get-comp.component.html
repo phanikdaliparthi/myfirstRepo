@@ -1,0 +1,12 @@
+<br>
+  <button (click)="getAllBooks()">Get All Book</button>
+  <br>
+  <table border="1">
+    <tr *ngFor="let book of postObject">
+      <td>{{book.id}}</td>
+      <td>{{book.name}}</td>
+      <td>{{book.Author}}</td>
+      <td>{{book.subject}}</td>
+      <td>{{book.durationInHours}}</td>
+  </tr>
+  </table>

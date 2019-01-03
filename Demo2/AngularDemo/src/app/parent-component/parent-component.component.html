@@ -1,0 +1,17 @@
+<p>
+  parent-component works!
+  <br>
+  Hi Mr. Parent :{{parentData}}
+  <br>
+  View to source: 
+  <input type="text" (input)="inputFunciton()" [disabled]="disableFlag" >
+  <button (click)="buttonFunction()">PressButton</button>
+  Number of Button Clicks = {{buttonClicks}}
+  Number of charecters left = {{numberofCharsLeft}}
+  Number of charecters Typed = {{numberofChars}}
+  <input type="text" [disabled]="disableFlag">
+</p>
+<span *ngIf="disableFlag; then printTemplate1 else printTemplate2"></span>
+<ng-template #printTemplate1>Text box disabled</ng-template>
+<ng-template #printTemplate2>Text box enaaabled</ng-template>
+<app-child [valueFromParent]="valueFromParenttoChild"></app-child>

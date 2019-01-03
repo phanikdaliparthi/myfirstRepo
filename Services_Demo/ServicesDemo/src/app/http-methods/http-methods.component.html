@@ -1,0 +1,11 @@
+<form name="form" (ngSubmit)="registerUser()"  #f="ngForm">
+  <label for="FirstName" >FirstName</label>
+  <input type="text" name="FirstName" id="FirstName" [(ngModel)]="model.FirstName">
+
+  <label for="LastName" >LastName</label>
+  <input type="LastName" name="LastName" id="LastName" [(ngModel)]="model.LastName">
+
+  <button type="submit">Sign Up</button>
+  <br>
+  Input from above:{{OutPutJson}}
+</form>
